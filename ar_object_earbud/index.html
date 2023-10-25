@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bean Pods</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet"/>
+    <!-- link to greensock main library and scroll plugin -->
+  </head>
+  <body>
+    <model-viewer id="model" src="model/ear-piece.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    
+    <button class="Hotspot" slot="hotspot-1" data-position="0.154408785736047m 5.958356732857494m -1.7861066621067443m" data-normal="0.12996219691919794m 0.555618812614099m -0.8212171225937965m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">comfortable rubber ear-piece</div>
+    </button>
+  
+    <button class="Hotspot" slot="hotspot-2" data-position="0.22870655217971753m 6.990711978617768m 0.24387007812486683m" data-normal="0.11280367258058553m 0.9422868092921094m -0.3152315030044241m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Built-in Microphone</div>
+    </button>
+    
+    <button class="Hotspot" slot="hotspot-3" data-position="0.1626624698618961m 5.245952272360979m 1.7819850146770468m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">24 Hour Battery Life</div>
+    </button>
+    
+    <button class="Hotspot" slot="hotspot-4" data-position="-0.08549089899107865m 2.107214629648027m -0.180088962010291m" data-normal="-0.03561223607867699m -0.40778013880098124m -0.9123854048815824m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Noise-Cancellation</div>
+        <h2>Noise-cancelling microphones</h2>
+    </button>
+    
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+ 
+    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
